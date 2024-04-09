@@ -1,0 +1,68 @@
+
+.clima__container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    height: 100vh; /* Establecer altura al 100% de la ventana */
+}
+
+.clima__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente blanco */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    max-width: 90%; /* Ancho máximo del componente */
+    margin: 0 auto; /* Margen automático izquierdo y derecho para centrar horizontalmente */
+}
+
+.weather__place {
+    font-size: 1.5rem; /* Tamaño de fuente aumentado */
+    font-weight: bold; /* Texto en negrita */
+    text-align: center; /* Centrar el texto */
+    color: #333; /* Color de texto gris oscuro */
+}
+
+.weather__descripcion {
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic; /* Estilo de fuente cursiva */
+    color: #666; /* Color de texto gris medio */
+}
+
+.weather__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Columnas igualmente distribuidas */
+    gap: 5px;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto en color blanco */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+@media screen and (max-width: 600px) {
+    .clima__card {
+        max-width: 300px; /* Reducir el ancho máximo para pantallas más pequeñas */
+    }
+ 
+}
+
+@media screen and (min-width: 1025px) {
+    .clima__card {
+        max-width: 800px; /* Ancho máximo del componente cuando la ventana tenga más de 1024px de ancho */
+    }
+}
