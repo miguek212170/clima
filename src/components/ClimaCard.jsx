@@ -26,13 +26,13 @@ const ClimaCard = ({ clima, temperatura }) => {
       </div>
       <h3>{
         esCelcius ?
-          temperatura?.celcius + "ºC"
+          temperatura?.celcius + " ºC"
           :
-          temperatura?.fahrenheit + "ºF"
+          temperatura?.fahrenheit + " ºF"
 
       }</h3>
       <button onClick={handleTemp}>
-        Cambiar a {esCelcius ? "ºF" : "ºC"}
+        Cambiar a {esCelcius ? " ºF" : " ºC"}
       </button>
     </div>
   )
